@@ -1,0 +1,20 @@
+/*
+Vert clair : #a0cb23;
+Vert foncé : #14462d;
+Rouge hot : #da485b;
+
+// attention dégradé pour les 3 "j'en profite"
+Turquoise : #92ddd8 to #95dcd6;
+Orange : #fb9823 to #f58313;
+Vert : #afe223 to #a0cb23;
+
+Fond gris des articles : #f6fafb;
+Jaune réduction : #fffc00;
+
+Police Roboto (from Google)
+*/
+
+header{
+    background-image: url(eval/img/banner.jpg);
+}
+
