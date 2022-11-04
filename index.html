@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="groxi.css">
+    <link rel="stylesheet" href="index.css">
     <title>Groxi</title>
 </head>
 <body>
     <header>
-        <div>
+        <img src="eval/img/bg_fruit.png" class="fruits">
+        <div class="flexbox row-nowrap space">
             <div>
                 <img src="eval/img/logo.png"> 
             </div>
@@ -24,71 +31,180 @@
                     <li>Contact</li>
                 </ul>
             </nav>
-            <div>
+            <div class="panier">
                 <ul>
-                    <li>icone 1</li>
-                    <li>icone 2</li>
-                    <li>icone 3</li>
-                    <li>icone 4</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-heart"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
                 </ul>
             </div>
         </div>
 
-        <div>
-            <div>
-                <div>
-                    <p>Bienvenue sur notre épicerie en ligne</p>
-                    <h1>Boutique en ligne de produits frais</h1>
-                    <p>Votre click & collect près de chez vous</p>
-                </div>
-                <div>
-                    <div>FAIRE SES COURSES</div>
-                    <div>EN SAVOIR PLUS</div>
-                </div>
+        <div class="marge blochead">
+            <div class="bienvenue">
+                <p>Bienvenue sur notre épicerie en ligne</p>
+                <h1>Boutique en ligne de produits frais</h1>
+                <p>Votre click & collect près de chez vous</p>
+            </div>
+            <div class="clicksavoirplus">
+                <div>FAIRE SES COURSES</div>
+                <div>EN SAVOIR PLUS</div>
             </div>
         </div>
     </header>
 
     <main>
-        <section> <!--chaque div enfant a sa background image-->
-            <div> 
+        <section class="flexbox row-nowrap profite"> <!--chaque div enfant a sa background color-->
+            <div class="profitebox"> 
                 <h2>Trouvez vos légumes préférés</h2>
-                <p>J'EN PROFITE</p>
+                <p>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></p>
+                <img src="eval/img/legumes.png">
             </div>
-            <div>
+            <div class="profitebox">
                 <h2>Notre meilleure sélection de boisssons</h2>
-                <p>J'EN PROFITE</p>
+                <p>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></p>
+                <img src="eval/img/boisson.png">
             </div>
-            <div> 
-                <h2>Produits beauté et santé</h2>
-                <p>J'EN PROFITE</p>
+            <div class="profitebox"> 
+                <h2>Produits <br>beauté et <br>santé</h2>
+                <p>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></p>
+                <img src="eval/img/beaute.png">
             </div>
         </section>
 
-        <div>
-            <p>Les plus populaires</p>
-            <h3>Produits dans le vent</h3>
-        </div>
-
-        <section>
-            <div>
-                <div> </div>
-                <div> </div>
-                <div> </div>
+        <section class="border produits"> 
+            <div class="vent">
+                <p>Les plus populaires</p>
+                <h3>Produits dans le vent</h3>
             </div>
 
-            <div>
-                <div> </div>
-                <div> </div>
-                <div> </div>
+          
+            <div class="imgprod">
+                <div class="bouffe">
+                    <div>
+                        <img src="eval/img/beef.png">
+                    </div>
+                    <div>
+                        <p>icones etoiles</p>
+                    </div>
+                    <div>
+                        Steak de boeuf
+                    </div>
+                    <div>
+                        prix barré / prix
+                    </div>
+                    <div>
+                        AJOUTER
+                    </div>
+                    <div class="hot">Hot</div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="bouffe">
+                    <div>
+                        <img src="eval/img/broccoli.png">
+                    </div>
+                    <div>
+                        <p>icones etoiles</p>
+                    </div>
+                    <div>
+                        Broccolis
+                    </div>
+                    <div>
+                        prix barré / prix
+                    </div>
+                    <div>
+                        AJOUTER
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="bouffe">
+                    <div>
+                        <img src="eval/img/fraises.png">
+                    </div>
+                    <div>
+                        <p>icones etoiles</p>
+                    </div>
+                    <div>
+                        Fraises
+                    </div>
+                    <div>
+                        prix barré / prix
+                    </div>
+                    <div>
+                        AJOUTER
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="imgprod">
+                <div class="bouffe">
+                    <div>
+                        <img src="eval/img/miel.png">
+                    </div>
+                    <div>
+                        <p>icones etoiles</p>
+                    </div>
+                    <div>
+                        Miel
+                    </div>
+                    <div>
+                        prix barré / prix
+                    </div>
+                    <div>
+                        AJOUTER
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="bouffe">
+                    <div>
+                        <img src="eval/img/lait.png">
+                    </div>
+                    <div>
+                        <p>icones etoiles</p>
+                    </div>
+                    <div>
+                        Lait du jour
+                    </div>
+                    <div>
+                        prix barré / prix
+                    </div>
+                    <div>
+                        AJOUTER
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="bouffe">
+                    <div>
+                        <img src="eval/img/mangue.png">
+                    </div>
+                    <div>
+                        <p>icones etoiles</p>
+                    </div>
+                    <div>
+                        Boisson à la mangue
+                    </div>
+                    <div>
+                        prix barré / prix
+                    </div>
+                    <div>
+                        AJOUTER
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div>50% de réduction<br>J'EN PROFITE -></div>
-        <div>Les produits les plus populaires </div>
-        <div><img src="eval/img/panier.jpg"></div>
+        <div><span class="reduc">50%</span> de réduction<br><br>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></div>
+        <div>Les produits les plus <br>populaires </div>
+        <img src="eval/img/panier.jpg">
     </footer>
     
 </body>

@@ -14,7 +14,256 @@ Jaune réduction : #fffc00;
 Police Roboto (from Google)
 */
 
-header{
-    background-image: url(eval/img/banner.jpg);
+html{
+    --vertclair-color: #a0cb23;
+    --vertfonce-color: #14462d;
+    font-family: 'Roboto', sans-serif; 
 }
 
+.fruits{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+header{
+    background-image: url(eval/img/banner.jpg);
+    height: 968px;
+}
+
+.panier ul li{
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    color: var(--vertclair-color);
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.row-nowrap{
+    flex-flow: row nowrap;
+}
+
+.space{
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+
+ul{
+    font-size: large;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+}
+
+.marge{
+    margin-left: 18.5%;
+}
+.blochead{
+    margin-top: 12em;
+    width: 32em;
+    height: 23.5em;
+    display: flex;
+    flex-flow:column wrap ;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 3.6em;
+}
+
+.bienvenue p:first-child{
+    color: var(--vertclair-color);
+    font-size: 1.3em;
+}
+
+.bienvenue p:nth-of-type(2){
+    font-size: 1.3em ;
+}
+
+.clicksavoirplus{
+    height: 11%;
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: flex-start;
+    color: white;
+    text-align: center;
+    font-size: small;
+    align-items: center;
+    font-weight: bold;
+}
+
+.clicksavoirplus div:first-child{
+    height: 85%;
+    width: 46%;
+    background-color: var(--vertclair-color);
+    margin-right: 1em;
+}
+.clicksavoirplus div:nth-of-type(2){
+    height: 85%;
+    width: 46%;
+    background-color: var(--vertfonce-color);
+}
+
+.clicksavoirplus div{
+    padding-top: 20px;
+}
+
+main section:first-child{
+    margin-top: 6%;
+}
+
+.profite{
+    justify-content: center;
+}
+
+.profitebox{
+    color: white;
+    
+    padding: 2% 2%;
+    width: 18em;
+    height: 13em;
+    position: relative;
+}
+
+.profite div:first-child{
+    background-color: #92ddd8;
+}
+
+.profite div:nth-child(2){
+    background-color: #fb9823;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.profite div:nth-child(3){
+    background-color: #afe223;
+}
+
+/*Turquoise : #92ddd8 to #95dcd6;
+Orange : #fb9823 to #f58313;
+Vert : #afe223 to #a0cb23;*/
+
+.profite div:first-child img{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.profite div:nth-child(3) img, .profite div:nth-child(2) img{
+    position: absolute;
+    right: 1.8em;
+    bottom: 1em;
+}
+
+.profite h2{
+    width: 60%;
+}
+
+.profitebox p{
+    margin-top: 20%;
+}
+
+.border{
+    border: 1px solid red;
+}
+.bouffe{
+    width: 22.7em;
+    height: 27em;
+    background-color: #f6fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.center{
+    justify-content: center;
+}
+
+.vent{
+    text-align: center;
+}
+.vent p{
+    color: var(--vertclair-color);    
+}
+
+.produits{
+    margin: 3em auto 1em;
+    width: 60%;
+}
+.imgprod{
+    height: 30.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-around;
+}
+.hot{
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    font-size: small;
+    color: white;
+    background-color: #da485b;
+    padding-top: 7px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bouffe i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    color: white;
+    background-color: var(--vertclair-color) ;
+    border-left: solid 6px #fffc00;
+    width: 59.8%;
+    height: 12em;
+    margin: 0em auto 5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+footer img{
+    height: 100%;
+    border-left: solid 20px rgb(148, 226, 75);
+    border-top: solid 2px rgb(148, 226, 75);
+    border-radius: 90% 0 0 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.reduc{
+    color: #fffc00;
+    font-size: 2em;
+}
+
+footer div{
+    margin-left: 10em;
+}
