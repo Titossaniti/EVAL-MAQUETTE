@@ -270,6 +270,22 @@ Vert : #afe223 to #a0cb23;*/
     justify-content: center;
     align-items: center;
 }
+
+.bouffe:hover{
+    border: solid 1px var(--vertclair-color);
+}
+
+.bouffe:hover div:nth-child(5){
+    background-color: var(--vertclair-color);
+}
+.bouffe:hover i:nth-child(6){
+    color: white;
+    background-color: var(--vertclair-color);
+}
+
+
+
+
 footer{
     color: white;
     background: rgb(175,226,35);
@@ -350,9 +366,6 @@ footer div:nth-of-type(2){
     margin-top: 13%;
 }
 
-.bouffe div:nth-of-type(5):hover{
-    cursor: pointer;
-}
 
 div.parentzero{
     position: relative;
