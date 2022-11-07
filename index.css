@@ -31,7 +31,23 @@ header{
     height: 968px;
 }
 
-.panier ul li{
+.width{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.panier{
+    width: 10em;
+    font-size: large;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.panier div{
     text-align: center;
     width: 2em;
     height: 2em;
@@ -56,17 +72,14 @@ header{
     align-items:center;
 }
 
-
-ul{
-    font-size: large;
-    list-style-type: none;
+nav {
+    width: 40%;
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
+    justify-content: space-between;
 }
 
 .marge{
-    margin-left: 18.5%;
+    margin-left: 20%;
 }
 .blochead{
     margin-top: 12em;
@@ -184,8 +197,18 @@ Vert : #afe223 to #a0cb23;*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
     position: relative;
+    padding-top: 4em;
+}
+
+.divimgbouffe{
+    height: 10em;
+}
+.divimgbouffe img{
+    height: 100%;
+}
+.ligne2{
+    margin-top: 2.2em;
 }
 
 .center{
@@ -223,7 +246,7 @@ Vert : #afe223 to #a0cb23;*/
     left: 0px;
 }
 
-.bouffe i{
+.bouffe .fa-heart{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -242,7 +265,7 @@ footer{
     border-left: solid 6px #fffc00;
     width: 59.8%;
     height: 12em;
-    margin: 0em auto 5em;
+    margin: 4em auto 5em;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -266,4 +289,50 @@ footer img{
 
 footer div{
     margin-left: 10em;
+}
+
+.goldstar{
+    color: gold;
+}
+.emptystar{
+    color: grey;
+}
+
+.bouffe div:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+}
+
+.bouffe div{
+    padding-top: 1em;
+}
+
+.prixbarre{
+    text-decoration: line-through;
+    color: grey;
+}
+.prixvert{
+    color: var(--vertclair-color);
+}
+
+.prixbarre, .prixvert{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.bouffe div:nth-of-type(3){
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.bouffe div:nth-of-type(5){
+    height: 2em;
+    width: 35%;
+    background-color: var(--vertfonce-color);
+    color: white;
+    text-align: center;
+    margin-top: 13%;
+}
+
+.bouffe div:nth-of-type(5):hover{
+    cursor: pointer;
 }
