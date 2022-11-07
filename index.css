@@ -202,10 +202,11 @@ Vert : #afe223 to #a0cb23;*/
 .border{
     border: 1px solid red;
 }
-.bouffe{
+.nourriture{
     width: 22.7em;
     height: 27em;
     background-color: #f6fafb;
+    border: 1px solid #f6fafb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,10 +214,10 @@ Vert : #afe223 to #a0cb23;*/
     padding-top: 4em;
 }
 
-.divimgbouffe{
+.divimgnourriture{
     height: 10em;
 }
-.divimgbouffe img{
+.divimgnourriture img{
     height: 100%;
 }
 .ligne2{
@@ -257,7 +258,7 @@ Vert : #afe223 to #a0cb23;*/
     left: 0px;
 }
 
-.bouffe .fa-heart{
+.nourriture .fa-heart{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -271,14 +272,14 @@ Vert : #afe223 to #a0cb23;*/
     align-items: center;
 }
 
-.bouffe:hover{
+.nourriture:hover{
     border: solid 1px var(--vertclair-color);
 }
 
-.bouffe:hover div:nth-child(5){
+.nourriture:hover div:nth-child(5){
     background-color: var(--vertclair-color);
 }
-.bouffe:hover i:nth-child(6){
+.nourriture:hover i:nth-child(6){
     color: white;
     background-color: var(--vertclair-color);
 }
@@ -331,12 +332,12 @@ footer div:nth-of-type(2){
     color: grey;
 }
 
-.bouffe div:nth-of-type(2){
+.nourriture div:nth-of-type(2){
     display: flex;
     flex-direction: row;
 }
 
-.bouffe div{
+.nourriture div{
     padding-top: 1em;
 }
 
@@ -353,17 +354,21 @@ footer div:nth-of-type(2){
     font-weight: bold;
 }
 
-.bouffe div:nth-of-type(3){
+.nourriture div:nth-of-type(3){
     font-size: 1.4em;
     font-weight: bold;
 }
-.bouffe div:nth-of-type(5){
+.nourriture div:nth-of-type(5){
     height: 2em;
     width: 35%;
     background-color: var(--vertfonce-color);
     color: white;
     text-align: center;
     margin-top: 13%;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
 
 
