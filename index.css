@@ -38,6 +38,15 @@ header{
     justify-content: space-between;
     align-items:center;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a i{
+    color: var(--vertclair-color);
+}
+
 .panier{
     width: 10em;
     font-size: large;
