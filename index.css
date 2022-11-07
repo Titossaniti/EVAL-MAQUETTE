@@ -150,17 +150,20 @@ main section:first-child{
 }
 
 .profite div:first-child{
-    background-color: #92ddd8;
+    background: rgb(146,221,216);
+    background: linear-gradient(55deg, rgba(146,221,216,1) 0%, rgba(149,220,214,1) 100%);
 }
 
 .profite div:nth-child(2){
-    background-color: #fb9823;
+    background: rgb(251,152,35);
+    background: linear-gradient(55deg, rgba(251,152,35,1) 0%, rgba(245,131,19,1) 100%);    
     margin-left: 1.5em;
     margin-right: 1.5em;
 }
 
 .profite div:nth-child(3){
-    background-color: #afe223;
+    background: rgb(175,226,35);
+    background: linear-gradient(55deg, rgba(175,226,35,1) 0%, rgba(160,203,35,1) 100%);
 }
 
 /*Turquoise : #92ddd8 to #95dcd6;
@@ -231,7 +234,6 @@ Vert : #afe223 to #a0cb23;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: space-around;
 }
 .hot{
     width: 50px;
@@ -261,7 +263,8 @@ Vert : #afe223 to #a0cb23;*/
 }
 footer{
     color: white;
-    background-color: var(--vertclair-color) ;
+    background: rgb(175,226,35);
+    background: linear-gradient(55deg, rgba(175,226,35,1) 0%, rgba(160,203,35,1) 100%);    
     border-left: solid 6px #fffc00;
     width: 59.8%;
     height: 12em;
@@ -274,8 +277,8 @@ footer{
 }
 footer img{
     height: 100%;
-    border-left: solid 20px rgb(148, 226, 75);
-    border-top: solid 2px rgb(148, 226, 75);
+    border-left: solid 20px #afe223;
+    border-top: solid 2px #afe223;
     border-radius: 90% 0 0 0;
     position: absolute;
     right: 0px;
@@ -284,11 +287,16 @@ footer img{
 
 .reduc{
     color: #fffc00;
-    font-size: 2em;
+    font-size: 3em;
 }
 
-footer div{
-    margin-left: 10em;
+footer div:first-child{
+    margin-left: 7em;
+}
+
+footer div:nth-of-type(2){
+    font-size: 2em;
+    margin-left: 3.5em;
 }
 
 .goldstar{
@@ -335,4 +343,18 @@ footer div{
 
 .bouffe div:nth-of-type(5):hover{
     cursor: pointer;
+}
+
+div.parentzero{
+    position: relative;
+}
+div.zero{
+    color: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--vertfonce-color);
+    font-size: xx-small;
 }

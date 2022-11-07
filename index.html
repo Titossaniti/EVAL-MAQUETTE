@@ -8,18 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="index.css">
-    <title>Groxi</title>
+    <title>Groxi - Votre épicerie en ligne</title>
 </head>
 <body>
     <header>
-        <img src="eval/img/bg_fruit.png" class="fruits">
+        <img src="eval/img/bg_fruit.png" class="fruits" alt="background transparent de fruits">
         <div class="flexbox row-nowrap width">
             <div>
-                <img src="eval/img/logo.png"> 
+                <img src="eval/img/logo.png" alt="logo de Groxi"> 
             </div>
             <nav>
                     <div>
@@ -39,7 +37,7 @@
                     <div><i class="fa-solid fa-magnifying-glass"></i></div>
                     <div><i class="fa-solid fa-user"></i></div>
                     <div><i class="fa-solid fa-heart"></i></div>
-                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="parentzero"><i class="fa-solid fa-cart-shopping"></i><div class="zero">0</div></div>
             </div>
         </div>
 
@@ -57,35 +55,35 @@
     </header>
 
     <main>
-        <section class="flexbox row-nowrap profite"> <!--chaque div enfant a sa background color-->
-            <div class="profitebox"> 
-                <h2>Trouvez vos légumes préférés</h2>
+        <section class="flexbox row-nowrap profite">
+            <div class="profitebox" labelledby="vos-légumes-préférés"> 
+                <h2 id="vos-légumes-préférés">Trouvez vos légumes préférés</h2>
                 <p>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></p>
-                <img src="eval/img/legumes.png">
+                <img src="eval/img/legumes.png" alt="sac de légumes">
             </div>
-            <div class="profitebox">
-                <h2>Notre meilleure sélection de boisssons</h2>
+            <div class="profitebox" labelledby="séléction-de-boissons">
+                <h2 id="séléction-de-boissons">Notre meilleure sélection de boisssons</h2>
                 <p>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></p>
-                <img src="eval/img/boisson.png">
+                <img src="eval/img/boisson.png" alt="boisson">
             </div>
-            <div class="profitebox"> 
-                <h2>Produits <br>beauté et <br>santé</h2>
+            <div class="profitebox" labelledby="produits-beauté-et-santé"> 
+                <h2 id="produits-beauté-et-santé">Produits <br>beauté et <br>santé</h2>
                 <p>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></p>
-                <img src="eval/img/beaute.png">
+                <img src="eval/img/beaute.png" alt="produit beauté">
             </div>
         </section>
 
-        <section class="produits"> 
+        <section class="produits" labelledby="produits-dans-le-vent"> 
             <div class="vent">
                 <p>Les plus populaires</p>
-                <h3>Produits dans le vent</h3>
+                <h3 id="produits-dans-le-vent">Produits dans le vent</h3>
             </div>
 
           
             <div class="imgprod">
                 <div class="bouffe">
                     <div class="divimgbouffe">
-                        <img src="eval/img/beef.png">
+                        <img src="eval/img/beef.png" alt="steak de boeuf">
                     </div>
                     <div>
                         <i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
@@ -105,7 +103,7 @@
 
                 <div class="bouffe">
                     <div class="divimgbouffe">
-                        <img src="eval/img/broccoli.png">
+                        <img src="eval/img/broccoli.png" alt="broccoli">
                     </div>
                     <div>
                         <i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
@@ -124,7 +122,7 @@
 
                 <div class="bouffe">
                     <div class="divimgbouffe">
-                        <img src="eval/img/fraises.png">
+                        <img src="eval/img/fraises.png" alt="fraises">
                     </div>
                     <div>
                         <i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
@@ -145,7 +143,7 @@
             <div class="imgprod ligne2">
                 <div class="bouffe">
                     <div class="divimgbouffe">
-                        <img src="eval/img/miel.png">
+                        <img src="eval/img/miel.png" alt="miel">
                     </div>
                     <div>
                         <i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
@@ -164,7 +162,7 @@
 
                 <div class="bouffe">
                     <div class="divimgbouffe">
-                        <img src="eval/img/lait.png">
+                        <img src="eval/img/lait.png" alt="lait">
                     </div>
                     <div>
                         <i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
@@ -183,7 +181,7 @@
 
                 <div class="bouffe">
                     <div class="divimgbouffe">
-                        <img src="eval/img/mangue.png">
+                        <img src="eval/img/mangue.png" alt="mangue">
                     </div>
                     <div>
                         <i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
@@ -203,10 +201,10 @@
         </section>
     </main>
 
-    <footer>
-        <div><span class="reduc">50%</span> de réduction<br><br>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></div>
-        <div>Les produits les plus <br>populaires </div>
-        <img src="eval/img/panier.jpg">
+    <footer labelledby="50%-de-réduction">
+        <div><span class="reduc" id="50%-de-réduction">50%</span> DE REDUCTION<br><br>J'EN PROFITE <i class="fa-solid fa-arrow-right"></i></div>
+        <div>Les produits les plus<br>populaires </div>
+        <img src="eval/img/panier.jpg" alt="panier avec produits variés">
     </footer>
     
 </body>
