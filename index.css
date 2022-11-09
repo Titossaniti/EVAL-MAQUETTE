@@ -28,10 +28,12 @@ html{
 
 header{
     background-image: url(eval/img/banner.jpg);
-    height: 968px;
+    background-size:cover;
+    width: 100%;
+    height: 955px;  
 }
 
-.width{
+.divhead{
     width: 60%;
     margin: auto;
     display: flex;
@@ -48,24 +50,22 @@ a i{
 }
 
 .panier{
-    width: 10em;
+    width: 15%;
     font-size: large;
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
     justify-content: space-between;
 }
 
 .panier div{
     text-align: center;
-    width: 2em;
-    height: 2em;
+    
     color: var(--vertclair-color);
     border-radius: 50%;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3.5%;
 }
 
 .flexbox{
@@ -77,27 +77,24 @@ a i{
 }
 
 .space{
-    justify-content: space-evenly;
-    align-items:center;
+
 }
 
 nav {
     width: 40%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.marge{
-    margin-left: 20%;
-}
+
 .blochead{
-    margin-top: 12em;
-    width: 32em;
-    height: 23.5em;
+    height: 43%;
+    margin:13% auto 0;
     display: flex;
     flex-flow:column wrap ;
     font-weight: bold;
-}
+}   
 
 h1{
     font-size: 3.6em;
@@ -113,15 +110,14 @@ h1{
 }
 
 .clicksavoirplus{
-    height: 11%;
-    width: 70%;
+    width: 31.5%;
+    height: 12.5%;
     display: flex;
     flex-flow: row nowrap;
     justify-items: flex-start;
     color: white;
     text-align: center;
     font-size: small;
-    align-items: center;
     font-weight: bold;
 }
 
@@ -129,16 +125,13 @@ h1{
     height: 85%;
     width: 46%;
     background-color: var(--vertclair-color);
-    margin-right: 1em;
+    margin-right: 5%;
 }
 .clicksavoirplus div:nth-of-type(2){
     height: 85%;
     width: 46%;
     background-color: var(--vertfonce-color);
-}
 
-.clicksavoirplus div{
-    padding-top: 20px;
 }
 
 main section:first-child{
@@ -146,33 +139,37 @@ main section:first-child{
 }
 
 .profite{
-    justify-content: center;
+width: 60%;
+height: 17rem;
+margin: auto;
+display: flex;
+justify-content: space-between;
 }
 
 .profitebox{
     color: white;
-    
     padding: 2% 2%;
-    width: 18em;
-    height: 13em;
     position: relative;
+    width: 28%;
+
 }
 
 .profite div:first-child{
     background: rgb(146,221,216);
     background: linear-gradient(55deg, rgba(146,221,216,1) 0%, rgba(149,220,214,1) 100%);
+    
 }
 
 .profite div:nth-child(2){
     background: rgb(251,152,35);
     background: linear-gradient(55deg, rgba(251,152,35,1) 0%, rgba(245,131,19,1) 100%);    
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+
 }
 
 .profite div:nth-child(3){
     background: rgb(175,226,35);
     background: linear-gradient(55deg, rgba(175,226,35,1) 0%, rgba(160,203,35,1) 100%);
+
 }
 
 /*Turquoise : #92ddd8 to #95dcd6;
@@ -183,49 +180,45 @@ Vert : #afe223 to #a0cb23;*/
     position: absolute;
     right: 0px;
     bottom: 0px;
+    max-width: 100%;
 }
 
 .profite div:nth-child(3) img, .profite div:nth-child(2) img{
     position: absolute;
-    right: 1.8em;
-    bottom: 1em;
+    right: 3%;
+    bottom: 0.5%;
+    max-width: 100%;
 }
 
 .profite h2{
-    width: 60%;
+/*    width: 60%;*/
 }
 
 .profitebox p{
-    margin-top: 20%;
+    margin-top: 14%;
 }
 
-.border{
-    border: 1px solid red;
-}
+
 .nourriture{
-    width: 22.7em;
-    height: 27em;
+    width: 32%;
     background-color: #f6fafb;
     border: 1px solid #f6fafb;
+    position: relative;
+    padding-top: 2%;    
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    padding-top: 4em;
+}
+.nourriture div:first-of-type{
+    height: 40%;
 }
 
-.divimgnourriture{
-    height: 10em;
-}
-.divimgnourriture img{
-    height: 100%;
-}
 .ligne2{
-    margin-top: 2.2em;
+    margin-top: 2%;
 }
 
 .center{
-    justify-content: center;
+
 }
 
 .vent{
@@ -240,11 +233,17 @@ Vert : #afe223 to #a0cb23;*/
     width: 60%;
 }
 .imgprod{
-    height: 30.5em;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+.imgprod img{
+    max-width: 100%;
+    height: auto;
+}
+
+
 .hot{
     width: 50px;
     height: 20px;
@@ -297,12 +296,12 @@ footer{
     margin: 4em auto 5em;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
     position: relative;
 }
 footer img{
     height: 100%;
+    max-width: 20%;
+    object-fit:cover ;
     border-left: solid 20px #afe223;
     border-top: solid 2px #afe223;
     border-radius: 90% 0 0 0;
@@ -317,12 +316,15 @@ footer img{
 }
 
 footer div:first-child{
-    margin-left: 7em;
+    margin-left: 5%;
 }
 
 footer div:nth-of-type(2){
     font-size: 2em;
-    margin-left: 3.5em;
+    margin-left: 13%;
+}
+footer div{
+    padding-top: 4%;
 }
 
 .goldstar{
@@ -359,12 +361,19 @@ footer div:nth-of-type(2){
     font-weight: bold;
 }
 .nourriture div:nth-of-type(5){
-    height: 2em;
+    height: 9%;
     width: 35%;
     background-color: var(--vertfonce-color);
     color: white;
     text-align: center;
-    margin-top: 13%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nourriture div p{
 }
 
 .uppercase{
@@ -384,4 +393,108 @@ div.zero{
     right: 0px;
     background-color: var(--vertfonce-color);
     font-size: xx-small;
+}
+
+.divhead, .blochead, .profite, .produits{
+    width: 60%;
+}
+
+@media screen and (max-width: 880px) {
+    header{
+        height: auto;
+    }
+    .divhead, .profite, .produits, nav{
+    width: 90%;
+    margin: auto;
+    }
+    nav{
+        display: flex;
+        flex-flow: column wrap;
+        font-size: small;
+        padding: 0 5% 0;
+        text-align: center;     
+    }
+    .panier{
+        flex-direction: column;
+    }
+    .panier div{
+        padding: 0 5% 0;
+    }
+    .blochead{
+        width: 90%;
+        height: auto;
+    }
+    .clicksavoirplus{
+        width: auto;
+    }
+    .clicksavoirplus div{
+        width: 100%;
+    }
+    .profite{
+        flex-direction: column;
+    }
+    .profitebox{
+        width: 100%;
+    }
+    .produits{
+        margin-top: 30em;
+    }
+    .imgprod{
+        flex-direction: column;
+    }
+    .nourriture{
+        width: 90%;
+        margin: 1em auto 0;
+    }
+    footer{
+        width: 80.5%;
+        margin: 1em auto 0;
+    }
+    footer div{
+        font-size: small;
+        margin-left: 0.1em;
+    }
+    footer img{
+        display: none;
+    }
+    .divhead{
+        height: 8em;
+    }
+    .bienvenue p:first-child{
+        font-size: 1em;
+    }
+    
+    .bienvenue p:nth-of-type(2){
+        font-size: 1em;
+    }
+    .bienvenue h1{
+        font-size: 3em;
+    }
+    .fruits{
+        width: 100%;
+    }
+    header{
+        background-image: none;        
+    }
+}
+
+@media screen and (min-width: 881px) and (max-width: 1400px){
+    .divhead, .profite, .produits, nav, footer{
+        width: 90%;
+        margin: auto;
+        }
+    nav{
+        width: 55%;
+        justify-content: space-between;
+    }
+    header{
+        background-size: cover;
+        height: auto;
+    }
+    .clicksavoirplus{
+        width: 50%;
+    }
+    footer{
+        margin-top: 1em;
+    }
 }
