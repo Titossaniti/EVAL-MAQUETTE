@@ -1,206 +1,250 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="index.css">
-    <title>Groxi - Votre épicerie en ligne</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="index.css">
+  <title>Groxi - Votre épicerie en ligne</title>
 </head>
 <body>
-    <header>
-        <img src="eval/img/bg_fruit.png" class="fruits" alt="background transparent de fruits">
-        <div class="flexbox row-nowrap divhead">
-            <div>
-                <a href="index.html"><img src="eval/img/logo.png" alt="logo de Groxi"></a> 
-            </div>
-            <nav>
-                    <div><a href="#">
-                    Accueil</a></div>
-                    <div><a href="#">
-                    A propos</a></div>
-                    <div><a href="#">
-                    Boutique</a></div>
-                    <div><a href="#">
-                    Pages</a></div>
-                    <div><a href="#">
-                    Blog</a></div>
-                    <div><a href="#">
-                    Contact</a></div>
-            </nav>
-            <div class="panier">
-                    <div><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
-                    <div><a href="#"><i class="fa-solid fa-user"></i></a></div>
-                    <div><a href="#"><i class="fa-solid fa-heart"></i></a></div>
-                    <div class="parentzero"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a><div class="zero">0</div></div>
-            </div>
-        </div>
+  <header>
+    <div class="container py-4"> 
+    <img src="eval/img/bg_fruit.png" class="fruits" alt="background transparent de fruits">
 
-        <div class="marge blochead">
-            <div class="bienvenue">
-                <p>Bienvenue sur notre épicerie en ligne</p>
-                <h1>Boutique en ligne <br>de produits frais</h1>
-                <p>Votre click & collect près de chez vous</p>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="eval/img/logo.png" alt="logo de Groxi"></a>
+            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#">Acceuil</a>
+                <a class="nav-link" href="#">A propos</a>
+                <a class="nav-link" href="#">Boutique</a>
+                <a class="nav-link" href="#">Pages</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">Contact</a>
+              </div>
             </div>
-            <div class="clicksavoirplus">
-                <div class="uppercase"><p>faire ses courses</p></div>
-                <div class="uppercase"><p>en savoir plus</p></div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="flexbox row-nowrap profite">
-            <div class="profitebox" aria-labelledby="vos-legumes-prefere"> 
-                <h2 id="vos-legumes-prefere">Trouvez vos <br>légumes <br>préférés</h2>
-                <p class="uppercase">j'en profite <i class="fa-solid fa-arrow-right"></i></p>
-                <img src="eval/img/legumes.png" alt="sac de légumes">
-            </div>
-            <div class="profitebox" aria-labelledby="selection-de-boissons">
-                <h2 id="selection-de-boissons">Notre meilleure <br>sélection de <br>boisssons</h2>
-                <p class="uppercase">j'en profite<i class="fa-solid fa-arrow-right"></i></p>
-                <img src="eval/img/boisson.png" alt="boisson">
-            </div>
-            <div class="profitebox" aria-labelledby="produits-beaute-et-sante"> 
-                <h2 id="produits-beaute-et-sante">Produits <br>beauté et <br>santé</h2>
-                <p class="uppercase">j'en profite<i class="fa-solid fa-arrow-right"></i></p>
-                <img src="eval/img/beaute.png" alt="produit beauté">
-            </div>
-        </section>
-
-        <section class="produits" aria-labelledby="produits-dans-le-vent"> 
-            <div class="vent">
-                <p>Les plus populaires</p>
-                <h3 id="produits-dans-le-vent">Produits dans le vent</h3>
-            </div>
-
-          
-            <div class="imgprod">
-                <div class="nourriture">
-                    <div class="divimgnourriture">
-                        <img src="eval/img/beef.png" alt="steak de boeuf">
-                    </div>
-                    <div aria-label="Note 3 étoiles sur 5">
-                        <div  aria-hidden="true"><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
-                    </div></div>
-                    <div>
-                        Steak de boeuf
-                    </div>
-                    <div>
-                        <span class="prixbarre">15€</span> <span class="prixvert">12€</span>
-                    </div>
-                    <div  class="uppercase">
-                        <p>ajouter</p>
-                    </div>
-                    <i class="fa-solid fa-heart activeheart" aria-hidden="true"></i>
-                    <div class="hot">Hot</div>
-                </div>
-
-                <div class="nourriture">
-                    <div class="divimgnourriture">
-                        <img src="eval/img/broccoli.png" alt="broccoli">
-                    </div>
-                    <div aria-label="Note 3 étoiles sur 5">
-                        <div  aria-hidden="true"><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
-                    </div></div>
-                    <div>
-                        Broccolis
-                    </div>
-                    <div>
-                        <span class="prixbarre">20€</span>  <span class="prixvert">15€</span>                    
-                    </div>
-                    <div class="uppercase">
-                        <p>ajouter</p>                    </div>
-                    <i class="fa-solid fa-heart activeheart" aria-hidden="true"></i>
-                </div>
-
-                <div class="nourriture">
-                    <div class="divimgnourriture">
-                        <img src="eval/img/fraises.png" alt="fraises">
-                    </div>
-                    <div aria-label="Note 3 étoiles sur 5">
-                        <div  aria-hidden="true"><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
-                    </div></div>
-                    <div>
-                        Fraises
-                    </div>
-                    <div>
-                        <span class="prixbarre">30€</span>  <span class="prixvert">20€</span>                    
-                    </div>
-                    <div class="uppercase">
-                        <p>ajouter</p>                    </div>
-                    <i class="fa-solid fa-heart activeheart" aria-hidden="true"></i>
-                </div>
-            </div>
-
-            <div class="imgprod ligne2">
-                <div class="nourriture">
-                    <div class="divimgnourriture">
-                        <img src="eval/img/miel.png" alt="miel">
-                    </div>
-                    <div aria-label="Note 3 étoiles sur 5">
-                        <div  aria-hidden="true"><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
-                    </div></div>
-                    <div>
-                        Miel
-                    </div>
-                    <div>
-                        <span class="prixbarre">50€</span>  <span class="prixvert">40€</span>                    
-                    </div>
-                    <div class="uppercase">
-                        <p>ajouter</p>                    </div>
-                    <i class="fa-solid fa-heart activeheart" aria-hidden="true"></i>
-                </div>
-
-                <div class="nourriture">
-                    <div class="divimgnourriture">
-                        <img src="eval/img/lait.png" alt="lait">
-                    </div>
-                    <div aria-label="Note 3 étoiles sur 5">
-                        <div  aria-hidden="true"><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
-                    </div></div>
-                    <div>
-                        Lait du jour
-                    </div>
-                    <div>
-                        <span class="prixbarre">10€</span>  <span class="prixvert">08€</span>                    
-                    </div>
-                    <div class="uppercase">
-                        <p>ajouter</p>                    </div>
-                    <i class="fa-solid fa-heart activeheart" aria-hidden="true"></i>
-                </div>
-
-                <div class="nourriture">
-                    <div class="divimgnourriture">
-                        <img src="eval/img/mangue.png" alt="mangue">
-                    </div>
-                    <div aria-label="Note 3 étoiles sur 5">
-                        <div  aria-hidden="true"><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-solid fa-star goldstar"></i><i class="fa-regular fa-star emptystar"></i><i class="fa-regular fa-star emptystar"></i>
-                    </div></div>
-                    <div>
-                        Boisson à la mangue
-                    </div>
-                    <div>
-                        <span class="prixbarre">22€</span>  <span class="prixvert">18€</span>             
-                    </div>
-                    <div class="uppercase">
-                        <p>ajouter</p>                    </div>
-                    <i class="fa-solid fa-heart activeheart" aria-hidden="true"></i>
-                </div>
-            </div>
-        </section>
-    </main>
-  
-    <footer aria-labelledby="50%-de-réduction">
-        <div  class="uppercase"><span class="reduc" id="50%-de-réduction">50%</span> de réduction<br><br>j'en profite <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></div>
-        <div>Les produits les plus<br>populaires </div>
-        <img src="eval/img/panier.jpg" alt="panier avec produits variés">
-    </footer>
+          <div class="iconesmenu text-center d-flex flex-row">
+            <div><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-user"></i></a></div>
+            <div><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+            <div class="position-relative"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a><div class="position-absolute top-0 start-100 translate-middle">0</div></div>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+        </nav>
+      </div>
     
+
+    <div class="bienvenue">
+      <div>
+        <p class="vertclair fs-5 fw-bold">Bienvenue sur notre épicerie en ligne</p>
+        <h1 class="py-2 display-1">Boutique en ligne <br>de produits frais</h1>
+        <p class="fs-4 fw-bold">Votre click & collect près de chez vous</p>
+      </div>
+      <div class="bienvenuebtn row my-5 text-center text-light fw-bold text-uppercase container">
+        <p class="col-md-12 col-lg-2 py-3">faire ses courses</p>
+        <p class="col-md-12 col-lg-2 py-3 offset-lg-1">en savoir plus</p>
+      </div>
+    </div>
+    </div> 
+  </header>
+
+  <main>
+    <section class="profite container">
+      <div class="row px-0 my-5 text-light">
+        <div aria-labelledby="vos-legumes-prefere" class="col-md-12 col-lg-4">
+          <div class="my-2 p-5 position-relative"> 
+            <h2 id="vos-legumes-prefere">Trouvez vos <br>légumes <br>préférés</h2>
+            <p class="text-uppercase my-4">j'en profite <i class="fa-solid fa-arrow-right"></i></p>
+            <img src="eval/img/legumes.png" alt="sac de légumes" class="position-absolute bottom-0 end-0">
+          </div>
+        </div>
+        <div aria-labelledby="selection-de-boissons" class="col-md-12 col-lg-4">
+          <div class="my-2 p-5 position-relative">
+            <h2 id="selection-de-boissons">Notre meilleure <br>sélection de <br>boisssons</h2>
+            <p class="text-uppercase my-4">j'en profite<i class="fa-solid fa-arrow-right"></i></p>
+            <img src="eval/img/boisson.png" alt="boisson" class="position-absolute bottom-0 end-0">
+          </div>
+        </div>
+        <div aria-labelledby="produits-beaute-et-sante" class="col-md-12 col-lg-4">
+          <div class="my-2 p-5 position-relative"> 
+            <h2 id="produits-beaute-et-sante">Produits <br>beauté et <br>santé</h2>
+            <p class="text-uppercase my-4">j'en profite<i class="fa-solid fa-arrow-right"></i></p>
+            <img src="eval/img/beaute.png" alt="produit beauté" class="position-absolute bottom-0 end-0">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="produits-dans-le-vent" class="produits-dans-le-vent container"> 
+        <div class="text-center py-3">
+        <p class="pluspop fs-4">Les plus populaires</p>
+        <h3 id="produits-dans-le-vent" class="display-5 fw-bold">Produits dans le vent</h3>
+        </div>
+
+     
+        <div class="produits row px-0 my-3">
+        <div class="col-md-12 col-lg-4">
+          <div class="prodhover position-relative text-center py-5 my-3">
+            <div>
+              <img src="eval/img/beef.png" alt="steak de boeuf">
+            </div>
+            <div aria-label="Note 3 étoiles sur 5" class="my-4">
+              <div aria-hidden="true"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-secondary"></i><i class="fa-regular fa-star text-secondary"></i>
+            </div></div>
+            <div class="my-1 fs-2">
+              Steak de boeuf
+            </div>
+            <div class="my-3 fs-4">
+              <span class="prixbarre">15€</span> <span class="prix">12€</span>
+            </div>
+            <div class="ajouter mt-5 d-flex justify-content-center">
+              <p class="text-light text-uppercase py-3">ajouter</p>
+            </div>
+            <i class="fav d-flex align-items-center justify-content-center fa-solid fa-heart" aria-hidden="true"></i>
+            <div class="px-2 py-1 position-absolute top-0 start-0 bg-danger text-light">Hot</div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4">
+          <div class="prodhover position-relative text-center py-5 my-3">
+            <div>
+              <img src="eval/img/broccoli.png" alt="broccolis">
+            </div>
+            <div aria-label="Note 3 étoiles sur 5" class="my-4">
+              <div aria-hidden="true"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-secondary"></i><i class="fa-regular fa-star text-secondary"></i>
+            </div></div>
+            <div class="my-1 fs-2">
+              Broccolis
+            </div>
+            <div class="my-3 fs-4">
+              <span class="prixbarre">20</span> <span class="prix">15€</span>
+            </div>
+            <div class="ajouter mt-5 d-flex justify-content-center">
+              <p class="text-light text-uppercase py-3">ajouter</p>
+            </div>
+            <i class="fav d-flex align-items-center justify-content-center fa-solid fa-heart" aria-hidden="true"></i>
+          </div>
+          </div>
+
+          <div class="col-md-12 col-lg-4">
+            <div class="prodhover position-relative text-center py-5 my-3">
+              <div>
+                <img src="eval/img/fraises.png" alt="fraises">
+              </div>
+              <div aria-label="Note 3 étoiles sur 5" class="my-4">
+                <div aria-hidden="true"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-secondary"></i><i class="fa-regular fa-star text-secondary"></i>
+              </div></div>
+              <div class="my-1 fs-2">
+                Fraises
+              </div>
+              <div class="my-3 fs-4">
+                <span class="prixbarre">30€</span> <span class="prix">20€</span>
+              </div>
+              <div class="ajouter mt-5 d-flex justify-content-center">
+                <p class="text-light text-uppercase py-3">ajouter</p>
+              </div>
+              <i class="fav d-flex align-items-center justify-content-center fa-solid fa-heart" aria-hidden="true"></i>
+            </div>
+            </div>
+        </div>
+
+        <div class="produits row px-0 mb-3">
+              <div class="col-md-12 col-lg-4">
+                <div class="prodhover position-relative text-center py-5 my-3">
+                  <div>
+                    <img src="eval/img/miel.png" alt="pot de miel">
+                  </div>
+                  <div aria-label="Note 3 étoiles sur 5" class="my-4">
+                    <div aria-hidden="true"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-secondary"></i><i class="fa-regular fa-star text-secondary"></i>
+                  </div></div>
+                  <div class="my-1 fs-2">
+                    Miel frais
+                  </div>
+                  <div class="my-3 fs-4">
+                    <span class="prixbarre">50€</span> <span class="prix">40€</span>
+                  </div>
+                  <div class="ajouter mt-5 d-flex justify-content-center">
+                    <p class="text-light text-uppercase py-3">ajouter</p>
+                  </div>
+                  <i class="fav d-flex align-items-center justify-content-center fa-solid fa-heart" aria-hidden="true"></i>
+                </div>
+                </div>
+            
+      
+              <div class="col-md-12 col-lg-4">
+                <div class="prodhover position-relative text-center py-5 my-3">
+                  <div>
+                    <img src="eval/img/lait.png" alt="lait du jour">
+                  </div>
+                  <div aria-label="Note 3 étoiles sur 5" class="my-4">
+                    <div aria-hidden="true"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-secondary"></i><i class="fa-regular fa-star text-secondary"></i>
+                  </div></div>
+                  <div class="my-1 fs-2">
+                    Lait du jour
+                  </div>
+                  <div class="my-3 fs-4">
+                    <span class="prixbarre">10€</span> <span class="prix">08€</span>
+                  </div>
+                  <div class="ajouter mt-5 d-flex justify-content-center">
+                    <p class="text-light text-uppercase py-3">ajouter</p>
+                  </div>
+                  <i class="fav d-flex align-items-center justify-content-center fa-solid fa-heart" aria-hidden="true"></i>
+                </div>
+                </div>
+      
+                <div class="col-md-12 col-lg-4">
+                  <div class="prodhover position-relative text-center py-5 my-3">
+                    <div>
+                      <img src="eval/img/mangue.png" alt="boisson à la mangue">
+                    </div>
+                    <div aria-label="Note 3 étoiles sur 5" class="my-4">
+                      <div aria-hidden="true"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-secondary"></i><i class="fa-regular fa-star text-secondary"></i>
+                    </div></div>
+                    <div class="my-1 fs-2">
+                      Boisson à la mangue
+                    </div>
+                    <div class="my-3 fs-4">
+                      <span class="prixbarre">22€</span> <span class="prix">18€</span>
+                    </div>
+                    <div class="ajouter mt-5 d-flex justify-content-center">
+                      <p class="text-light text-uppercase py-3">ajouter</p>
+                    </div>
+                    <i class="fav d-flex align-items-center justify-content-center fa-solid fa-heart" aria-hidden="true"></i>
+                  </div>
+                  </div>
+        </div>
+    </section>
+  </main>
+ 
+  <footer aria-labelledby="50%-de-reduction">
+    <section class="container text-light mb-5">
+        <div class="container">
+            <div class="foot row position-relative">
+                <div class="col-lg- col-xl-4 fs-4 ps-5 py-5">
+                  <span class="reduc fs-1" id="50%-de-réduction">50%</span> de réduction<br><br>j'en profite <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div class="col-xl-5 px-0 py-5 display-4">
+                  Les produits les plus populaires 
+                </div>
+                <div class="col-xl-2 d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                    <img src="eval/img/panier.jpg" alt="panier de différents produits" class="imgfoot position-absolute end-0">
+                </div>
+            </div>
+        </div>
+    </section>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

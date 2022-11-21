@@ -16,8 +16,16 @@ Police Roboto (from Google)
 
 html{
     --vertclair-color: #a0cb23;
-    --vertfonce-color: #14462d;
-    font-family: 'Roboto', sans-serif; 
+    --vertfonce-color: #14462d; 
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+@media screen and (min-width:1200px){
+    header{
+    background-image: url(eval/img/banner.jpg);
+    background-size: cover;
+    height: 968px;}
 }
 
 .fruits{
@@ -26,475 +34,111 @@ html{
     left: 0px;
 }
 
-header{
-    background-image: url(eval/img/banner.jpg);
-    background-size:cover;
-    width: 100%;
-    height: 955px;  
+.iconesmenu a{
+    color: #a0cb23;
 }
-
-.divhead{
-    width: 60%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-a i{
-    color: var(--vertclair-color);
-}
-
-.panier{
-    width: 15%;
-    font-size: large;
-    display: flex;
-    justify-content: space-between;
-}
-
-.panier div{
-    text-align: center;
-    
-    color: var(--vertclair-color);
-    border-radius: 50%;
+.iconesmenu div{
+    width: 25px;
+    height: 25px;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3.5%;
+    border-radius: 50%;
+}
+.iconesmenu div div:last-of-type{
+    color: white;
+    font-size: x-small;
+    width: 15px;
+    height: 15px;
+    background-color: #14462d;
 }
 
-.flexbox{
-    display: flex;
+section.produits-dans-le-vent img{
+    max-height: 6em;
 }
-
-.row-nowrap{
-    flex-flow: row nowrap;
+.bienvenue{
+    margin-top: 19%;
 }
-
-.space{
-
+.bienvenuebtn p:first-child{
+    background:#a0cb23;
 }
-
-nav {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.bienvenuebtn p:last-child{
+    background:#14462d;
 }
-
-
-.blochead{
-    height: 43%;
-    margin:13% auto 0;
-    display: flex;
-    flex-flow:column wrap ;
-    font-weight: bold;
-}   
-
+.vertclair{
+    color: #a0cb23;
+}
 h1{
-    font-size: 3.6em;
+    font-size: 4.5em;
 }
 
-.bienvenue p:first-child{
-    color: var(--vertclair-color);
-    font-size: 1.3em;
-}
-
-.bienvenue p:nth-of-type(2){
-    font-size: 1.3em ;
-}
-
-.clicksavoirplus{
-    width: 31.5%;
-    height: 12.5%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-items: flex-start;
-    color: white;
-    text-align: center;
-    font-size: small;
-    font-weight: bold;
-}
-
-.clicksavoirplus div:first-child{
-    height: 85%;
-    width: 46%;
-    background-color: var(--vertclair-color);
-    margin-right: 5%;
-}
-.clicksavoirplus div:nth-of-type(2){
-    height: 85%;
-    width: 46%;
-    background-color: var(--vertfonce-color);
-
-}
-
-main section:first-child{
-    margin-top: 6%;
-}
-
-.profite{
-width: 60%;
-height: 17rem;
-margin: auto;
-display: flex;
-justify-content: space-between;
-}
-
-.profitebox{
-    color: white;
-    padding: 2% 2%;
-    position: relative;
-    width: 28%;
-
-}
-
-.profite div:first-child{
+section.profite div div:nth-of-type(1) div{
     background: rgb(146,221,216);
     background: linear-gradient(55deg, rgba(146,221,216,1) 0%, rgba(149,220,214,1) 100%);
-    
+    min-height: 17em;
 }
-
-.profite div:nth-child(2){
+section.profite div div:nth-of-type(2) div{
     background: rgb(251,152,35);
-    background: linear-gradient(55deg, rgba(251,152,35,1) 0%, rgba(245,131,19,1) 100%);    
-
+    background: linear-gradient(55deg, rgba(251,152,35,1) 0%, rgba(245,131,19,1) 100%);  
+    min-height: 17em;
 }
-
-.profite div:nth-child(3){
+section.profite div div:nth-of-type(3) div{
     background: rgb(175,226,35);
     background: linear-gradient(55deg, rgba(175,226,35,1) 0%, rgba(160,203,35,1) 100%);
-
+    min-height: 17em;
 }
-
-/*Turquoise : #92ddd8 to #95dcd6;
-Orange : #fb9823 to #f58313;
-Vert : #afe223 to #a0cb23;*/
-
-.profite div:first-child img{
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    max-width: 100%;
+.produits div div{
+    background: #f6fafb;
 }
-
-.profite div:nth-child(3) img, .profite div:nth-child(2) img{
-    position: absolute;
-    right: 3%;
-    bottom: 0.5%;
-    max-width: 100%;
+.ajouter p{
+    width: 40%;
+    background-color: #14462d;
 }
-
-.profite h2{
-/*    width: 60%;*/
-}
-
-.profitebox p{
-    margin-top: 14%;
-}
-
-
-.nourriture{
-    width: 32%;
-    background-color: #f6fafb;
-    border: 1px solid #f6fafb;
-    position: relative;
-    padding-top: 2%;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.nourriture div:first-of-type{
-    height: 40%;
-}
-
-.ligne2{
-    margin-top: 2%;
-}
-
-.center{
-
-}
-
-.vent{
-    text-align: center;
-}
-.vent p{
-    color: var(--vertclair-color);    
-}
-
-.produits{
-    margin: 3em auto 1em;
-    width: 60%;
-}
-.imgprod{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.imgprod img{
-    max-width: 100%;
-    height: auto;
-}
-
-
-.hot{
-    width: 50px;
-    height: 20px;
-    text-align: center;
-    font-size: small;
-    color: white;
-    background-color: #da485b;
-    padding-top: 7px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.nourriture .fa-heart{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nourriture:hover{
-    border: solid 1px var(--vertclair-color);
-}
-
-.nourriture:hover div:nth-child(5){
-    background-color: var(--vertclair-color);
-}
-.nourriture:hover i:nth-child(6){
-    color: white;
-    background-color: var(--vertclair-color);
-}
-
-
-
-
-footer{
-    color: white;
-    background: rgb(175,226,35);
-    background: linear-gradient(55deg, rgba(175,226,35,1) 0%, rgba(160,203,35,1) 100%);    
-    border-left: solid 6px #fffc00;
-    width: 59.8%;
-    height: 12em;
-    margin: 4em auto 5em;
-    display: flex;
-    flex-flow: row nowrap;
-    position: relative;
-}
-footer img{
-    height: 100%;
-    max-width: 20%;
-    object-fit:cover ;
-    border-left: solid 20px #afe223;
-    border-top: solid 2px #afe223;
-    border-radius: 90% 0 0 0;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
-
-.reduc{
-    color: #fffc00;
-    font-size: 3em;
-}
-
-footer div:first-child{
-    margin-left: 5%;
-}
-
-footer div:nth-of-type(2){
-    font-size: 2em;
-    margin-left: 13%;
-}
-footer div{
-    padding-top: 4%;
-}
-
-.goldstar{
-    color: gold;
-}
-.emptystar{
-    color: grey;
-}
-
-.nourriture div:nth-of-type(2){
-    display: flex;
-    flex-direction: row;
-}
-
-.nourriture div{
-    padding-top: 1em;
-}
-
 .prixbarre{
     text-decoration: line-through;
     color: grey;
 }
-.prixvert{
-    color: var(--vertclair-color);
+.prix{
+    color:#a0cb23;
 }
-
-.prixbarre, .prixvert{
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-.nourriture div:nth-of-type(3){
-    font-size: 1.4em;
-    font-weight: bold;
-}
-.nourriture div:nth-of-type(5){
-    height: 9%;
-    width: 35%;
-    background-color: var(--vertfonce-color);
-    color: white;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nourriture div p{
-}
-
-.uppercase{
-    text-transform: uppercase;
-}
-
-
-div.parentzero{
-    position: relative;
-}
-div.zero{
-    color: white;
-    width: 10px;
-    height: 10px;
+.fav{
+    color: grey;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    background-color: var(--vertfonce-color);
-    font-size: xx-small;
+    top: 5%;
+    right: 5%;
+    background: rgb(255, 255, 255);
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+}
+.pluspop{
+    color: #a0cb23;
 }
 
-.divhead, .blochead, .profite, .produits{
-    width: 60%;
+.imgfoot{
+    max-height:100%;
+    object-fit: contain;
+    border-left: solid 20px #afe223;
+    border-top: solid 2px #afe223;
+    border-radius: 90% 0 0 0;
 }
 
-@media screen and (max-width: 880px) {
-    header{
-        height: auto;
-    }
-    .divhead, .profite, .produits, nav{
-    width: 90%;
-    margin: auto;
-    }
-    nav{
-        display: flex;
-        flex-flow: column wrap;
-        font-size: small;
-        padding: 0 5% 0;
-        text-align: center;     
-    }
-    .panier{
-        flex-direction: column;
-    }
-    .panier div{
-        padding: 0 5% 0;
-    }
-    .blochead{
-        width: 90%;
-        height: auto;
-    }
-    .clicksavoirplus{
-        width: auto;
-    }
-    .clicksavoirplus div{
-        width: 100%;
-    }
-    .profite{
-        flex-direction: column;
-    }
-    .profitebox{
-        width: 100%;
-    }
-    .produits{
-        margin-top: 30em;
-    }
-    .imgprod{
-        flex-direction: column;
-    }
-    .nourriture{
-        width: 90%;
-        margin: 1em auto 0;
-    }
-    footer{
-        width: 80.5%;
-        margin: 1em auto 0;
-    }
-    footer div{
-        font-size: small;
-        margin-left: 0.1em;
-    }
-    footer img{
-        display: none;
-    }
-    .divhead{
-        height: 8em;
-    }
-    .bienvenue p:first-child{
-        font-size: 1em;
-    }
-    
-    .bienvenue p:nth-of-type(2){
-        font-size: 1em;
-    }
-    .bienvenue h1{
-        font-size: 3em;
-    }
-    .fruits{
-        width: 100%;
-    }
-    header{
-        background-image: none;        
-    }
+.foot{
+    border-left: solid 10px #fffc00;
+    background: rgb(175,226,35);
+    background: linear-gradient(55deg, rgba(175,226,35,1) 0%, rgba(160,203,35,1) 100%);
 }
-
-@media screen and (min-width: 881px) and (max-width: 1400px){
-    .divhead, .profite, .produits, nav, footer{
-        width: 90%;
-        margin: auto;
-        }
-    nav{
-        width: 55%;
-        justify-content: space-between;
-    }
-    header{
-        background-size: cover;
-        height: auto;
-    }
-    .clicksavoirplus{
-        width: 50%;
-    }
-    footer{
-        margin-top: 1em;
-    }
+.prodhover{
+    border: solid 1px #f6fafb;
+}
+.prodhover:hover{
+    border: solid 1px var(--vertclair-color);
+}
+.prodhover:hover .fa-heart{
+    color: white;
+    background-color: var(--vertclair-color);
+}
+.prodhover:hover .ajouter p{
+    background-color: var(--vertclair-color);
+}
+.reduc{
+    color: #fffc00;
 }
